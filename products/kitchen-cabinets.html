@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Cabinets - Nostra Mobilia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .category-hero {
+            padding-top: calc(var(--header-height) + var(--spacing-16));
+            padding-bottom: var(--spacing-16);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="../index.html">Nostra Mobilia</a></div>
+        <div class="nav-links">
+            <a href="../index.html#collection">Categories</a>
+            <a href="../index.html#craftsmanship">Craftsmanship</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="category-hero container">
+        <h1 class="fade-in">Kitchen Cabinets</h1>
+        <p class="subheadline fade-in" style="margin-top: var(--spacing-4); color: var(--color-text-secondary);">
+            Bespoke cabinetry solutions combining functionality with our signature architectural aesthetic.
+        </p>
+    </header>
+
+    <section class="collection">
+        <div class="container">
+            <p class="text-center fade-in">New collection arriving soon.</p>
+            <div style="text-align: center; margin-top: var(--spacing-8);">
+                <button class="btn open-quote-modal" onclick="openModal()">Inquire for Custom Orders</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" style="padding: var(--spacing-16) 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container flex-col items-center">
+            <div class="logo" style="margin-bottom: var(--spacing-4);">Nostra Mobilia</div>
+            <p class="tagline"
+                style="margin-bottom: var(--spacing-8); text-align: center; color: var(--color-text-secondary);">
+                Redefining the modern dining experience.</p>
+            <div class="footer-links" style="margin-bottom: var(--spacing-8);">
+                <a href="#" style="margin: 0 var(--spacing-4);">Instagram</a>
+                <a href="#" style="margin: 0 var(--spacing-4);">Email Us</a>
+            </div>
+            <p style="font-size: var(--text-xs); color: #999;">&copy; 2026 Nostra Mobilia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 class="modal-title">Request a Quote</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

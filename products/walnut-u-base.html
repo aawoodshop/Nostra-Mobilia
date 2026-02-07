@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walnut U-Base Table - Nostra Mobilia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .product-detail-hero {
+            padding-top: var(--header-height);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-16);
+            align-items: center;
+        }
+
+        @media(min-width: 900px) {
+            .product-detail-grid {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+        }
+
+        .spec-list {
+            list-style: none;
+            margin: var(--spacing-8) 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .spec-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: var(--spacing-4) 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: var(--text-sm);
+        }
+
+        .spec-label {
+            color: var(--color-text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="../index.html">Nostra Mobilia</a></div>
+        <div class="nav-links">
+            <a href="../index.html#collection">Collection</a>
+            <a href="../index.html#craftsmanship">Craftsmanship</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="product-detail-hero container">
+        <div class="product-detail-grid">
+            <div class="product-gallery">
+                <img src="../assets/u_walnut.png" alt="Walnut U-Base Dining Table" class="fade-in">
+            </div>
+            <div class="product-details fade-in" style="transition-delay: 0.2s;">
+                <span class="eyebrow">Dining Table</span>
+                <h1 style="font-size: var(--text-4xl); margin-bottom: var(--spacing-4);">Walnut U-Base Table</h1>
+                <p class="description" style="color: var(--color-text-secondary); margin-bottom: var(--spacing-8);">
+                    Rich warmth meets cool elegance. The solid walnut base features a deep u-shape that grounds the
+                    room, while the Cristallo marble top adds a touch of brightness.
+                </p>
+
+                <ul class="spec-list">
+                    <li><span class="spec-label">Dimensions</span> <span>8 ft × 4 ft × 27 in</span></li>
+                    <li><span class="spec-label">Top Material</span> <span>1″ Cristallo Marble</span></li>
+                    <li><span class="spec-label">Base Material</span> <span>Solid Walnut</span></li>
+                    <li><span class="spec-label">Origin</span> <span>Handcrafted in Italy</span></li>
+                </ul>
+
+                <button class="btn" onclick="openModal()">Request a Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" style="padding: var(--spacing-16) 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container flex-col items-center">
+            <div class="logo" style="margin-bottom: var(--spacing-4);">Nostra Mobilia</div>
+            <div class="footer-links" style="margin-bottom: var(--spacing-8);">
+                <a href="#" style="margin: 0 var(--spacing-4);">Instagram</a>
+                <a href="#" style="margin: 0 var(--spacing-4);">Email Us</a>
+            </div>
+            <p style="font-size: var(--text-xs); color: #999;">&copy; 2026 Nostra Mobilia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 class="modal-title">Request a Quote</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
