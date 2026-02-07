@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor TV Stands - Nostra Mobilia</title>
+    <meta name="description"
+        content="Premium outdoor TV stands designed for modern outdoor entertainment, combining luxury design and durability.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="../index.html">Nostra Mobilia</a></div>
+        <div class="nav-links">
+            <a href="../index.html#collection">Collection</a>
+            <a href="outdoor-kitchens.html">Outdoor Kitchen</a>
+            <a href="outdoor-tv-stand.html">Outdoor TV Stand</a>
+            <a href="../index.html#craftsmanship">Craftsmanship</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Title / Hero -->
+    <header class="category-hero container text-center">
+        <h1 class="fade-in">Outdoor TV Stands,<br>Elevated</h1>
+        <p class="subheadline fade-in" style="margin-top: var(--spacing-4);">
+            Luxury entertainment, built for the outdoors.
+        </p>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero-image-section fade-in">
+        <div class="container">
+            <div class="hero-image-wrapper">
+                <img src="../assets/Lux_outdoor_kitchen (5).png" alt="Luxury Outdoor TV Stand"
+                    style="width: 100%; height: auto; border-radius: 4px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Description Text -->
+    <section class="description-section">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <h2 class="section-title fade-in">Redefining Outdoor Entertainment</h2>
+            <div class="copy-text fade-in">
+                <p>Our outdoor TV stand redefines outdoor entertainment. Designed with the same philosophy as our
+                    outdoor kitchens, it combines refined aesthetics with intelligent construction to protect your
+                    electronics while enhancing your space.</p>
+                <br>
+                <p>This piece is not an accessory — it is a centerpiece. Clean, modern lines conceal functional
+                    engineering that prioritizes durability, ventilation, and organization. The result is an elegant
+                    solution that allows you to enjoy entertainment outdoors without compromising design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section bg-soft">
+        <div class="container">
+            <div class="features-grid single-column">
+                <ul class="feature-list fade-in">
+                    <li>Luxury, minimalist design that complements high-end outdoor kitchens</li>
+                    <li>Built to protect electronics in outdoor conditions</li>
+                    <li>Clean interior layout with hidden cable management</li>
+                    <li>Premium finishes that elevate outdoor entertainment spaces</li>
+                    <li>Designed to feel like built-in furniture, not a temporary unit</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Statement -->
+    <section class="value-section text-center">
+        <div class="container">
+            <h3 class="value-statement fade-in">“This outdoor TV stand is created for clients who expect the same level
+                of refinement outdoors as they do inside their homes.”</h3>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <p class="cta-subtext fade-in">A refined solution for elevated outdoor living.</p>
+            <button class="btn btn-large fade-in" onclick="openModal()">Request More Information</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" style="padding: var(--spacing-16) 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container flex-col items-center">
+            <div class="logo" style="margin-bottom: var(--spacing-4);">Nostra Mobilia</div>
+            <p class="tagline"
+                style="margin-bottom: var(--spacing-8); text-align: center; color: var(--color-text-secondary);">
+                Redefining the modern dining experience.</p>
+            <div class="footer-links" style="margin-bottom: var(--spacing-8);">
+                <a href="#" style="margin: 0 var(--spacing-4);">Instagram</a>
+                <a href="#" style="margin: 0 var(--spacing-4);">Email Us</a>
+            </div>
+            <p style="font-size: var(--text-xs); color: #999;">&copy; 2026 Nostra Mobilia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal-overlay" id="quoteModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <h2 class="modal-title">Request a Quote</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

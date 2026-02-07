@@ -442,8 +442,223 @@ nav {
 }
 
 .modal-title {
-    font-family: var(--font-display);
-    font-size: var(--text-2xl);
-    margin-bottom: var(--spacing-6);
     text-align: center;
+}
+
+/* --- New Premium Styles --- */
+
+/* Detailed Features Section (Card Grid) */
+.detailed-features-section {
+    padding: var(--spacing-16) 0;
+}
+
+.feature-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+    .feature-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 cards per row */
+        gap: var(--spacing-8);
+    }
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    /* text-align: left;  Optional: Center or Left? Left looks more editorial */
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    margin-bottom: var(--spacing-4);
+    overflow: hidden;
+    /* Aspect ratio constraint to keep images uniform and "smaller" */
+    aspect-ratio: 4 / 3;
+    background-color: #f0f0f0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+
+.card-image:hover img {
+    transform: scale(1.05);
+}
+
+.card-text h3 {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-2);
+    color: var(--color-charcoal);
+}
+
+.card-text p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.lightbox-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.lightbox-overlay.active .lightbox-image {
+    transform: scale(1);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+/* Features */
+.features-section {
+    padding: var(--spacing-24) 0;
+    background-color: var(--color-warm-beige);
+    /* Fallback or new var */
+}
+
+/* Ensure warm beige exists or use off-white */
+:root {
+    --color-warm-beige: #F5F4F0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-12);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features-grid.single-column {
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-6);
+    padding-left: var(--spacing-8);
+    position: relative;
+    color: var(--color-charcoal);
+    font-weight: 300;
+}
+
+.feature-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #C0A062;
+    /* Subtle gold accent */
+}
+
+/* Description Text */
+.description-section {
+    padding: var(--spacing-24) 0;
+}
+
+.section-title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--spacing-8);
+    font-family: var(--font-serif);
+}
+
+.copy-text p {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Value & CTA */
+.value-section {
+    padding: var(--spacing-24) 0;
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+}
+
+.value-statement {
+    font-family: var(--font-serif);
+    font-size: var(--text-2xl);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .value-statement {
+        font-size: var(--text-3xl);
+    }
+}
+
+.cta-section {
+    padding: var(--spacing-24) 0;
+}
+
+.cta-subtext {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-8);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    font-family: var(--font-serif);
+}
+
+.btn-large {
+    padding: var(--spacing-6) var(--spacing-12);
+    font-size: var(--text-base);
 }

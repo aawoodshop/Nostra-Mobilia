@@ -5,19 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdoor Kitchens - Nostra Mobilia</title>
+    <meta name="description"
+        content="Luxury outdoor kitchens with modern design and long-lasting materials. Designed to elevate outdoor living with timeless elegance.">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
-    <style>
-        .category-hero {
-            padding-top: calc(var(--header-height) + var(--spacing-16));
-            padding-bottom: var(--spacing-16);
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,25 +20,225 @@
     <nav>
         <div class="logo"><a href="../index.html">Nostra Mobilia</a></div>
         <div class="nav-links">
-            <a href="../index.html#collection">Categories</a>
+            <a href="../index.html#collection">Collection</a>
+            <a href="outdoor-kitchens.html">Outdoor Kitchen</a>
+            <a href="outdoor-tv-stand.html">Outdoor TV Stand</a>
             <a href="../index.html#craftsmanship">Craftsmanship</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <header class="category-hero container">
-        <h1 class="fade-in">Outdoor Kitchens</h1>
-        <p class="subheadline fade-in" style="margin-top: var(--spacing-4); color: var(--color-text-secondary);">
-            State-of-the-art culinary stations designed for the ultimate al fresco hosting experience.
+    <!-- Page Title / Hero -->
+    <header class="category-hero container text-center">
+        <h1 class="fade-in">Luxury Outdoor Kitchens,<br>Designed to Last</h1>
+        <p class="subheadline fade-in" style="margin-top: var(--spacing-4);">
+            Where refined design meets uncompromising durability.
         </p>
     </header>
 
-    <section class="collection">
+    <!-- Detailed Features Grid (Images + Text) -->
+    <section class="detailed-features-section">
         <div class="container">
-            <p class="text-center fade-in">New collection arriving soon.</p>
-            <div style="text-align: center; margin-top: var(--spacing-8);">
-                <button class="btn open-quote-modal" onclick="openModal()">Inquire for Custom Orders</button>
+            <h2 class="section-title text-center fade-in" style="margin-bottom: var(--spacing-12);">Engineered for
+                Excellence</h2>
+            <div class="feature-card-grid">
+
+                <!-- Card 1 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (1).jpg" alt="Precision Stainless Steel"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Marine-Grade Durability</h3>
+                        <p>Constructed with high-gauge stainless steel to resist corrosion, rust, and salt air, ensuring
+                            perfection in any climate.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (2).jpg" alt="Seamless Design"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Seamless Integration</h3>
+                        <p>Designed to blend effortlessly with your landscape, creating a unified visual flow between
+                            nature and architecture.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (3).png" alt="Premium Countertops"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Resilient Surfaces</h3>
+                        <p>Our ultra-compact surfaces are resistant to UV rays, heat, scratches, and stains, maintaining
+                            their pristine look for decades.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (4).png" alt="Weatherproof Construction"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>All-Weather Engineering</h3>
+                        <p>Every component is gasket-sealed and engineered to withstand heavy rain, extreme heat, and
+                            freezing temperatures.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (5).png" alt="Architectural Form"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Architectural Form</h3>
+                        <p>Clean lines and minimalist profiles create a statement piece that rivals the finest interior
+                            furniture.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (6).png" alt="Smart Storage"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Intelligent Storage</h3>
+                        <p>Water-tight cabinetry with soft-close hardware keeps your culinary tools dry, organized, and
+                            ready for use.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (7).png" alt="Ventilation Technology"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Advanced Ventilation</h3>
+                        <p>Integrated airflow systems ensure safety and longevity for appliances, preventing overheating
+                            in enclosed spaces.</p>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (8).png" alt="Entertaining Layout"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Host-Centric Layout</h3>
+                        <p>Ergonomically designed zones for prepping, cooking, and serving allow you to engage with
+                            guests while you work.</p>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (9).png" alt="Minimalist Hardware"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Refined Hardware</h3>
+                        <p>Minimalist handles and hidden hinges reinforce the sleek aesthetic while offering robust
+                            tactile durability.</p>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (10).png" alt="Easy Maintenance"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Effortless Maintenance</h3>
+                        <p>Non-porous materials and thoughtful joinery make cleaning simple, leaving you more time to
+                            enjoy your outdoor sanctuary.</p>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="feature-card fade-in">
+                    <div class="card-image">
+                        <img src="../assets/Lux_outdoor_kitchen (11).png" alt="Timeless Value"
+                            onclick="openLightbox(this)">
+                    </div>
+                    <div class="card-text">
+                        <h3>Timeless Value</h3>
+                        <p>Built to outlast trends and seasons, this is an investment in lifestyle that enhances your
+                            property's value.</p>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section>
+
+    <!-- Description Text -->
+    <section class="description-section">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <h2 class="section-title fade-in">Architectural Elegance</h2>
+            <div class="copy-text fade-in">
+                <p>Our outdoor kitchens are designed for clients who demand more than appearance. Each piece blends
+                    modern luxury with materials engineered to withstand sun, rain, humidity, and time itself. Clean
+                    lines, refined proportions, and premium finishes transform outdoor spaces into elegant extensions of
+                    the home.</p>
+                <br>
+                <p>This is not a temporary solution — it is a long-term investment in comfort, beauty, and performance.
+                    Every detail is intentional, from the layout to the storage, from the materials to the
+                    craftsmanship. The result is a timeless outdoor environment built for entertaining, living, and
+                    lasting.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section bg-soft">
+        <div class="container">
+            <div class="features-grid">
+                <ul class="feature-list fade-in">
+                    <li>Architectural, minimalist design with a luxury aesthetic</li>
+                    <li>Built for outdoor environments: resistant to heat, humidity, rain, and UV exposure</li>
+                    <li>Premium finishes that maintain elegance year after year</li>
+                </ul>
+                <ul class="feature-list fade-in">
+                    <li>Thoughtfully designed storage and functional layout</li>
+                    <li>Seamless integration with modern homes and landscapes</li>
+                    <li>Custom configurations available to fit each space and lifestyle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Statement -->
+    <section class="value-section text-center">
+        <div class="container">
+            <h3 class="value-statement fade-in">“Unlike mass-produced outdoor kitchens, this collection is designed to
+                feel permanent, refined, and exclusive — a true statement piece for outdoor living.”</h3>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <p class="cta-subtext fade-in">Designed for those who value longevity, design, and exclusivity.</p>
+            <button class="btn btn-large fade-in" onclick="openModal()">Request More Information</button>
         </div>
     </section>
 
@@ -63,9 +258,9 @@
     </footer>
 
     <!-- Quote Modal -->
-    <div class="modal-overlay">
+    <div class="modal-overlay" id="quoteModal">
         <div class="modal-content">
-            <button class="close-modal">&times;</button>
+            <button class="close-modal" onclick="closeModal()">&times;</button>
             <h2 class="modal-title">Request a Quote</h2>
             <form class="modal-form">
                 <div class="form-group">
@@ -83,6 +278,12 @@
                 <button type="submit" class="btn">Send Request</button>
             </form>
         </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" id="lightbox-img" src="">
     </div>
 
     <script src="../js/main.js"></script>

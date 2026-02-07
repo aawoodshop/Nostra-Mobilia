@@ -61,4 +61,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Attach openModal to buttons dynamically if needed, 
     // or rely on onclick="openModal()" in HTML
+
+    // Lightbox Logic
+    const lightboxOverlay = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    if (lightboxOverlay && lightboxImg) {
+        window.openLightbox = function (element) {
+            lightboxImg.src = element.src;
+            lightboxOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeLightbox = function () {
+            lightboxOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => { lightboxImg.src = ''; }, 300);
+        };
+
+        lightboxOverlay.addEventListener('click', (e) => {
+            if (e.target === lightboxOverlay || e.target.classList.contains('close-lightbox')) {
+                window.closeLightbox();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
+                window.closeLightbox();
+            }
+        });
+    }
 });
